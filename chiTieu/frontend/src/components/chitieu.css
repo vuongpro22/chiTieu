@@ -1,0 +1,264 @@
+.ctt-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fe;
+}
+
+.ctt-sidebar {
+  width: 370px;
+  background: #eaf1fb;
+  padding: 0 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 16px 0 #e6e6e6;
+}
+
+.ctt-sidebar-header {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 32px 0 16px 0;
+  width: 100%;
+  justify-content: center;
+}
+.ctt-app-icon {
+  font-size: 32px;
+  color: #1677ff;
+  margin-right: 10px;
+}
+.ctt-app-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+.ctt-add-card {
+  width: 90%;
+  border-radius: 16px !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: 0 2px 16px #e6e6e6;
+  background: #fff;
+}
+.ctt-add-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1677ff;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ctt-btn-add {
+  margin-top: 8px;
+  font-size: 16px;
+  height: 44px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.ctt-main {
+  flex: 1;
+  padding: 10px 32px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ctt-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 64px;
+  background: transparent;
+  margin-bottom: 12px;
+}
+.ctt-header-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+}
+.ctt-btn-logout {
+  margin-left: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.ctt-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ctt-list-card {
+  border-radius: 16px !important;
+  box-shadow: 0 2px 16px #e6e6e6;
+  background: #fff;
+  margin-bottom: 0;
+}
+.ctt-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.ctt-list-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+.ctt-list-actions-desktop { display: flex; gap: 8px; }
+.ctt-list-actions-mobile { display: none; }
+
+.ctt-list-actions button {
+  margin-left: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.ctt-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.ctt-total-card {
+  border-radius: 16px !important;
+  box-shadow: 0 2px 16px #e6e6e6;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 32px;
+  margin-top: 0;
+  width: 350px;
+}
+.ctt-total-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #389e0d;
+  display: flex;
+  align-items: center;
+}
+.ctt-total-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #16a34a;
+  margin-left: 18px;
+}
+
+.ctt-buyer-totals-row, .ctt-personal-expense-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  margin: 18px 0 0 0;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #e6e6e6;
+  padding: 0;
+  overflow: hidden;
+}
+.ctt-buyer-total-card, .ctt-personal-expense-card {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 33%;
+  border-radius: 0 !important;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #f0f0f0;
+}
+.ctt-buyer-total-card:last-child, .ctt-personal-expense-card:last-child {
+  border-right: none;
+}
+.ctt-buyer-total-title, .ctt-personal-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.ctt-buyer-total-value, .ctt-personal-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1677ff;
+  text-align: center;
+}
+.ctt-personal-value {
+  color: #16a34a;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ctt-layout {
+    flex-direction: column;
+  }
+  .ctt-sidebar {
+    width: 100%;
+    box-shadow: none;
+    padding: 0;
+  }
+  .ctt-main {
+    padding: 0 8px;
+  }
+  .ctt-total-card {
+    width: 100%;
+    padding: 12px 8px;
+  }
+  .ctt-buyer-totals-row, .ctt-personal-expense-row {
+    flex-direction: row;
+    padding: 0;
+  }
+  .ctt-buyer-total-card, .ctt-personal-expense-card {
+    padding: 0;
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .ctt-add-card {
+    width: 100%;
+    padding: 0 2px;
+  }
+  .ctt-list-card {
+    padding: 0 2px;
+  }
+  .ctt-buyer-totals-row, .ctt-personal-expense-row {
+    flex-direction: row;
+    padding: 0;
+  }
+  .ctt-buyer-total-card, .ctt-personal-expense-card {
+    padding: 0;
+    font-size: 13px;
+  }
+  .ctt-list-actions-desktop { display: none; }
+  .ctt-list-actions-mobile { display: block; }
+}
+
+.ctt-history-modal-table {
+  overflow-x: auto;
+}
+.ctt-history-modal-table .ant-table-wrapper {
+  min-width: 600px;
+}
+@media (max-width: 600px) {
+  .ctt-history-modal-table {
+    padding: 0 2px;
+    margin: 0 -8px;
+  }
+  .ctt-history-modal-table .ant-table-wrapper {
+    min-width: 520px;
+  }
+  .ant-modal {
+    padding: 0 !important;
+  }
+  .ant-modal-content {
+    padding: 8px 2px !important;
+  }
+} 
