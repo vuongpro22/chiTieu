@@ -1,0 +1,21 @@
+{
+  "name": "chi-tieu-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "seed:users": "node scripts/seed-users.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "helmet": "^7.2.0",
+    "mongoose": "^8.18.0",
+    "morgan": "^1.10.0"
+  }
+}
+
