@@ -31,7 +31,7 @@ app.use(errorHandler);
 
 async function main() {
   await connectToMongo();
-  const port = Number(process.env.PORT || 8080);
+  const port = Number(process.env.PORT || 8081);
   const server = app.listen(port, () => {
     // eslint-disable-next-line no-console
     console.log(`[server] listening on http://localhost:${port}`);
